@@ -1,7 +1,13 @@
 from letnum import ltn, ntl
 def atbash(text):
     """
-    Replace each letter in text with its opposite letter (abs(letter_position - 25))
+    Description:
+    Replaces each letter in text with its "opposite" letter 
+    
+    General Equation:
+    (abs(letter_position - 25))
+
+    Doctests:
     >>> atbash("abcdefghijklmnopqrstuvwxyz")
     'zyxwvutsrqponmlkjihgfedcba'
     """

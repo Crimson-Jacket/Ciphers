@@ -15,8 +15,5 @@ def caesar(text, shift):
         if type(x) == int:
             nums.append((x + shift) % 26)
         else:
-            if x == " ":
-                nums.append(" ")
-            else:
-                nums.append(x)
+            nums.append(x)
     return ntl(nums)
