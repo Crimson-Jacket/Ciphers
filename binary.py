@@ -1,4 +1,9 @@
 def toBinary(text, spaced=False):
+    """
+    Description:
+    Converts ASCII symbols into binary.
+
+    """
     result = ["00" + format(ord(x), "b") if ord(x) < 64 else "0" + format(ord(x), "b") for x in text]
     if spaced:
         return " ".join(result)
@@ -6,6 +11,10 @@ def toBinary(text, spaced=False):
         return "".join(result)
 
 def fromBinary(nums):
+    """
+    Description:
+    Converts valid binary into ASCII symbols.
+    """
     result = ""
     if " " in nums:
         for el in nums.split(" "):

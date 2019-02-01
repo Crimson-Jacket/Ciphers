@@ -2,15 +2,16 @@ from letnum import ltn, ntl
 def atbash(text):
     """
     Description:
-    Replaces each letter in text with its "opposite" letter 
+    A cipher that replaces each letter in text with its "opposite" letter.
     
-    General Equation:
+    Equation:
     (abs(letter_position - 25))
 
     Doctests:
     >>> atbash("abcdefghijklmnopqrstuvwxyz")
     'zyxwvutsrqponmlkjihgfedcba'
     """
+    
     nums = []
     for x in ltn(text):
         if type(x) == int:

@@ -1,6 +1,17 @@
 from letnum import ltn, ntl, ltnKey
 
 def variantBeaufort(text, key, encOrDec):
+    """
+    Description:
+    A cipher that uses a tabula recta to encode text.
+    It's basically reverse Vigenere.
+
+    Encoding equation:
+    (letter - key_letter) % 26
+
+    Decoding equation:
+    (letter + key_letter) % 26
+    """
     text = ltn(text)
     key = ltnKey(key)
     result = []

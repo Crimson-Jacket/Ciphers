@@ -1,20 +1,32 @@
 def ltn(text):
     """
-    Converts letters in text into numbers. Used in other ciphers.
+    Description:
+    Converts letters into numbers.
+
+    Program Notes:
+    Abstraction for other ciphers. 
+    Return type is an array for convenience.
     """
     return [ord(x) - 97 if 97 <= ord(x) <= 122 else x for x in text.lower()]
 
 def ltnKey(text):
     """
-    Converts letters in text into numbers. Gets rid of all non-alphabetic symbols.
+    Description:
+    Converts letters into numbers, specifically for cipher keys.
+    
+    Program Notes:
+    Abstraction for other ciphers.
+    Gets rid of all non-alphabetic symbols.
     """
     return [ord(x) - 97 for x in text.lower() if 97 <= ord(x) <= 122]
 
 def ntl(nums):
     """
+    Description:
     Converts valid numbers into letters.
-    >>> ntl([20, 8, 9, 19, '.', ' ', 9, '3', 19, ' ', 1, ' ', 20, 5, '2', 19, 20])
-    'uijt. j3t b uf2tu'
+
+    Program Notes:
+    Abstraction for other ciphers.
     """
     text = ""
     for x in nums:

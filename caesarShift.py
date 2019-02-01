@@ -1,7 +1,13 @@
 from letnum import ltn, ntl
 def caesar(text, shift):
     """
-    Shifts each letter in text by n positions.
+    Description:
+    A cipher that shifts each letter by n positions.
+
+    Equation:
+    (letter + shift) % 26
+
+    Test Cases:
     >>> caesar("abcdefghijklmnopqrstuvwxyz", 1)
     'bcdefghijklmnopqrstuvwxyza'
     >>> caesar("abcdefghijklmnopqrstuvwxyz", 25)

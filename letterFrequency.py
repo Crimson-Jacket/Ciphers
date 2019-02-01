@@ -1,4 +1,8 @@
 def letterFrequency(text):
+    """
+    Description:
+    A program that finds the frequency of letters.
+    """
     frequency = {}
     for x in "".join(text.split(" ")):
         try:
